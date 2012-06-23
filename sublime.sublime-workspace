@@ -1,0 +1,271 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "json.py",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/sh.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"gp",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Quick Commit"
+			],
+			[
+				"term",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"packa",
+				"Package Control: Add Repository"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"add ",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 250.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nordmenss/git/bash-overview/array.sh",
+		"/Users/nordmenss/git/bash-overview/var.sh",
+		"/Users/nordmenss/git/bash-overview/Makefile",
+		"/Users/nordmenss/git/bash-overview/string.sh",
+		"/Users/nordmenss/git/bash-overview/var/null.sh",
+		"/Users/nordmenss/git/git-utils/usr/local/bin/gg",
+		"/Users/nordmenss/git/git-utils/usr/local/bin/gg.sh",
+		"/Users/nordmenss/git/git-utils/sublime.sublime-project",
+		"/Users/nordmenss/git/git-utils/Makefile",
+		"/Users/nordmenss/git/git-utils/README",
+		"/Users/nordmenss/git/git-config/README",
+		"/Users/nordmenss/git/git-config/Makefile",
+		"/Users/nordmenss/git/git-config/gitignore",
+		"/Users/nordmenss/git/mac-os-bash-profile/Makefile",
+		"/Users/nordmenss/git/mac-os-bash-profile/README",
+		"/Users/nordmenss/git/mac-os-bash-profile/.bash_aliases",
+		"/Users/nordmenss/git/mac-os-bash-profile/.project",
+		"/Users/nordmenss/git/mac-os-bash-profile/.bash_profile",
+		"/Users/nordmenss/git/applescript_api/README.md",
+		"/Users/nordmenss/git/applescript_api/Makefile",
+		"/Users/nordmenss/git/applescript_api/Library/Scripts/API/datetime.scpt",
+		"/Users/nordmenss/git/applescript_api/Library/Scripts/API/os.scpt",
+		"/Users/nordmenss/git/mac-os-bash-profile/sublime.sublime-project",
+		"/Users/nordmenss/git/mac-os-sublime-builder-sh/README",
+		"/Users/nordmenss/git/mac-os-sublime-builder-sh/Makefile",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/nordmenss/git/makefile_overview/Makefile",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/User/Terminal.sublime-settings",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/nordmenss/git/makefile_overview/sublime.sublime-project",
+		"/Users/nordmenss/git/makefile_examples/Makefile",
+		"/Users/nordmenss/git/makefile_examples/sublime.sublime-workspace",
+		"/Users/nordmenss/git/makefile_examples/.project",
+		"/Users/nordmenss/git/makefile_examples/sublime.sublime-project",
+		"/Users/nordmenss/git/mac-os-sublime-builder-sh/Library/Application Support/Sublime Text 2/Packages/User/sh.sublime-build",
+		"/Users/nordmenss/git/python_overview/init.py",
+		"/Users/nordmenss/git/ruby_overview/ruby_overview.sublime-project",
+		"/Users/nordmenss/git/ruby_overview/test.rb",
+		"/Users/nordmenss/git/ruby_overview/.project",
+		"/Users/nordmenss/git/ruby_overview/command line.sh",
+		"/Users/nordmenss/git/unix_examples/date.sh",
+		"/Users/nordmenss/git/php_overview/init.php",
+		"/Users/nordmenss/Documents/workspace/unix/sed.sh",
+		"/Users/nordmenss/Documents/workspace/test/sed.sh",
+		"/Users/nordmenss/git/test/test.py",
+		"/Users/nordmenss/git/test/test.php",
+		"/Users/nordmenss/git/test/untitled.sublime-project",
+		"/Users/nordmenss/git/test/sed.sh",
+		"/Users/nordmenss/Documents/workspace/unixcpp/sed.sh",
+		"/Users/nordmenss/Documents/workspace/unixcpp/config.sublime-project",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/User/sh.sublime-build",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/nordmenss/untitled.sublime-project",
+		"/Users/nordmenss/sh.sublime-build",
+		"/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/User/untitled.sublime-build",
+		"/Users/nordmenss/untitled.sublime-build"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"termi",
+			"kage Cont"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "json.py",
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Makefile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 307.0,
+	"status_bar_visible": true
+}

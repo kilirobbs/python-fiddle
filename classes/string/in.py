@@ -1,0 +1,1 @@
+print 'Py' in 'Python'
