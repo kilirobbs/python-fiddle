@@ -1,0 +1,3 @@
+lib.tracks[its.name.contains('test')]
+
+its.artist.contains(u'billy joel')).AND(its.name.contains(u'honesty'))

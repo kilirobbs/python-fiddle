@@ -1,0 +1,26 @@
+from git import *
+repo = Repo("/Users/nordmenss/git/pg_test")
+# http://packages.python.org/GitPython/0.3.0/tutorial.html#the-commit-object
+branch	= repo.heads[0]
+branch 	= repo.head.reference           
+
+for commit in repo.iter_commits(branch, max_count=-1, skip=-1):
+	print "\n",commit.__class__, "hexsha=",commit.hexsha
+	try:
+		print commit.tree["SCHEMA/_a.sql"].data_stream.read() 
+	except:
+		pass
+	try:
+		print commit.tree["SCHEMA/_b.sql"].data_stream.read() 
+	except:
+		pass
+
+hash="be10ae33736bb6bd0118b9e17c6888d720cd6fec"
+# repo.head.reference.commit = hash # = git checkout
+
+def commits(repo):
+	l=map(lambda x: x,repo.iter_commits(repo.head.reference))
+	l.reverse()
+	return l
+
+print commits(repo)

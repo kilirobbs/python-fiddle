@@ -1,0 +1,1 @@
+sudo pip install --upgrade git+git://github.com/nordmenss/django-content-base.git#egg=gitname

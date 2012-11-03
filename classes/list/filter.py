@@ -1,0 +1,18 @@
+import os
+from os.path import splitext
+
+# http://stackoverflow.com/questions/3845423/remove-empty-strings-from-a-list-of-strings
+
+print filter(None, ["1", "2"])
+print filter(None, ["1", None])
+print "".join(filter(None, ["1", "2"]))
+print "empty list join is (%s)" % "\n".join(filter(None, []))
+print "".join(filter(None, ["1", "2"]))
+print filter(lambda x: splitext(x)[1] in [".sql"], ["name.sql","references.sql"])
+
+
+print filter(lambda x: x==1,[1,2])
+
+l=["SCHEMA/public","SCHEMA/public/TABLE/tablename"]
+print filter(lambda x: x.startswith("SCHEMA/public/"),l)
+print filter(lambda x: x.startswith("SCHEMA/public2/"),l)

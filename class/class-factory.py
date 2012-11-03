@@ -1,20 +1,11 @@
 # http://www.ibm.com/developerworks/ru/library/l-pymeta/
 
-def class_with_method(func):
-	class klass: pass
-	setattr(klass, func.__name__, func)
-	return klass
+def meta(name):
+    class cls():
+        pass
 
-def say_foo(self): 
-	print 'foo'
-		
-Foo = class_with_method(say_foo)
-foo = Foo()
-foo.say_foo()
+    cls.__name__ = name
+    return cls
 
-
-
-from new import classobj
-Foo2 = classobj('Foo2',(Foo,),{'bar':lambda self:'bar'})
-Foo2().bar()
-Foo2().say_foo()
+new_class=meta("new_class1")
+print new_class.__name__

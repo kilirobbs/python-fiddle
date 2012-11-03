@@ -7,20 +7,20 @@ def autoassign(*names, **kwargs):
     autoassign(function) -> method
     autoassign(*argnames) -> decorator
     autoassign(exclude=argnames) -> decorator
-    
+
     allow a method to assign (some of) its arguments as attributes of
     'self' automatically.  E.g.
-    
+
     >>> class Foo(object):
     ...     @autoassign
     ...     def __init__(self, foo, bar): pass
-    ... 
+    ...
     >>> breakfast = Foo('spam', 'eggs')
     >>> breakfast.foo, breakfast.bar
     ('spam', 'eggs')
-    
+
     To restrict autoassignment to 'bar' and 'baz', write:
-    
+
         @autoassign('bar', 'baz')
         def method(self, foo, bar, baz): ...
 
@@ -54,24 +54,24 @@ def autoassign(*names, **kwargs):
     return f and decorator(f) or decorator
 
 
-class Test(object): 
-	key1=None
-	key2=None
-	@autoassign('foo', 'bar')
-	def __init__(self, foo, bar=3, baz=6):
-		"some clever stuff going on here"
-		print 'baz =', baz 
-	
-	
-class Test2(object):
-	@autoassign
-	def __init__(self, foo, bar): pass
-	
-class Test3(object,Test):
-	@autoassign(exclude=('foo', 'bar'))
-	def __init__(self, **kwargs): pass
+class Test(object):
+    key1=None
+    key2=None
+    @autoassign('foo', 'bar')
+    def __init__(self, foo, bar=3, baz=6):
+        "some clever stuff going on here"
+        print 'baz =', baz
 
-t = Test(1, 2, 5) 
+
+class Test2(object):
+    @autoassign
+    def __init__(self, foo, bar): pass
+
+class Test3(object,Test):
+    @autoassign(exclude=('foo', 'bar'))
+    def __init__(self, **kwargs): pass
+
+t = Test(1, 2, 5)
 baz = 5
 u = Test(foo=8)
 baz = 6

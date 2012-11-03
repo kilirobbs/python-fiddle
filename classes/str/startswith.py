@@ -1,0 +1,1 @@
+print "12345".startswith("123")

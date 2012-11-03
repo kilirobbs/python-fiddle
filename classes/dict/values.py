@@ -1,0 +1,13 @@
+d=dict(one=1, two=2, three=3)
+print d.values()
+
+print 2 in d.values()
+
+# http://stackoverflow.com/questions/8023306/get-key-by-value-in-dictionary
+# get KEY BY VALUE
+print next((k for k, v in d.items() if v == 3), None)
+
+
+# get multiple values by list of keys
+keys=["one","two"]
+print dict((key,value) for (key,value) in d.iteritems() if key in keys)

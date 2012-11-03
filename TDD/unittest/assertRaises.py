@@ -1,9 +1,7 @@
-# http://stackoverflow.com/questions/129507/how-do-you-test-that-a-python-function-throws-an-exception
-
 import unittest
 
 def myfunc():
-	raise ValueError
+    raise ValueError
 
 class MyTestCase(unittest.TestCase):
     def test(self):
@@ -11,4 +9,4 @@ class MyTestCase(unittest.TestCase):
 
 
 if __name__ == "__main__":
-	unittest.main()
+    unittest.main()

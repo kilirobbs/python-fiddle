@@ -1,0 +1,1 @@
+print len(dict(one=1, two=2))

@@ -1,0 +1,6 @@
+# http://docs.python.org/2/distutils/sourcedist.html#the-manifest-in-template
+
+recursive-include lib *.c *.txt
+
+include README* LICENSE distribute_setup.py sa2to3.py ez_setup.py sqla_nose.py CHANGES*
+prune doc/build/output

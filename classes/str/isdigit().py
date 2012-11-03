@@ -1,0 +1,4 @@
+print "1".isdigit()
+print str(1).isdigit() # True
+print str(14.88).isdigit() # False
+print str(14.88)

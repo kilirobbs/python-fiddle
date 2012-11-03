@@ -34,7 +34,9 @@ parser.add_option('--hello', action='callback', dest='help_string', nargs=1, cal
 
 parser.add_option('--hidden_option', action='store_true', help=optparse.SUPPRESS_HELP)
 
-
+import sys
+sys.argv.append("-P")
+sys.argv.append("--file2=/usr/loca/bin/pgit")
 options,arguments=parser.parse_args()
 
 for key,value in options.__dict__.items():

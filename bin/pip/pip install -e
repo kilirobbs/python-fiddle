@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# http://stackoverflow.com/questions/9402035/installing-python-package-from-github-using-pip
+
+# The -e flag tells pip to install it as "editable", i.e. keep the source around.

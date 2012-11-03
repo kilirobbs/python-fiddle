@@ -1,0 +1,20 @@
+{% if user_list %}
+  Number of users in the list: {{ user_list|count }}
+{% else %}
+  No users found.
+{% endif %}
+
+{% if user_list|count>0 -%}
+	>0
+{% else %}
+	<0
+{%- endif %}
+<ul>
+{% for user in user_list %}
+  <li><a href="/profile/{{ user.id }}/">{{ user.name }}</a></li>
+{% endfor %}
+</ul>
+
+
+{{ numbers }}
+

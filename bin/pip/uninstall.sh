@@ -1,0 +1,1 @@
+sudo /usr/local/bin/pip uninstall tutby
