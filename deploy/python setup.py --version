@@ -1,0 +1,5 @@
+# http://stackoverflow.com/questions/6138386/get-the-version-from-distutils-setup-py
+# Get the version from distutils setup.py
+
+
+python setup.py --version

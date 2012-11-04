@@ -1,5 +1,7 @@
+#!/usr/bin/env python
 import sys
 import os
+import stat
 
 
 filename = sys.modules[__name__].__file__
