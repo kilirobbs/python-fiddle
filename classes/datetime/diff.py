@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-
+from dateutil.relativedelta import relativedelta
 
 
 now = datetime.now()
@@ -10,10 +10,9 @@ print diff.days
 print diff.seconds
 print diff.microseconds
 
-def today(timedelta):
-	return timedelta.seconds/3600
-
-def hours(timedelta):
-	return timedelta.seconds/3600
-
-print hours(diff)
+print "relativedelta"
+diff = relativedelta(next, now)
+print diff,diff.__class__
+print diff.days 
+print diff.hours # 8
+print diff.minutes 

@@ -1,0 +1,26 @@
+from jinja2 import Environment
+
+source="""
+{{ items|last }}
+"""
+tmpl = Environment().from_string(source)
+items=[0,1,2,3]
+print tmpl.render(
+    items=items
+)
+
+class cls:
+    id=None
+    value=None
+    def __init__(self,id=None,value=None):
+        self.id=id
+        self.value=value
+
+source="""
+{{ (items|last).id }}
+"""
+tmpl = Environment().from_string(source)
+items=[cls(id=0),cls(id=1),cls(id=2)]
+print tmpl.render(
+    items=items
+)

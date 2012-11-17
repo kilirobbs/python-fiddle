@@ -1,3 +1,3 @@
-import shutil
+from shutil import rmtree
 
-shutil.rmtree("/Users/nordmenss/git/pg_test")
+rmtree("/Users/nordmenss/git/pg_test")

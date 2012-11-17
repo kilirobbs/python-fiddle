@@ -1,4 +1,11 @@
+import sys
 import urllib
 
-# http://docs.python.org/library/urllib.html
-print urllib.urlopen("http://www.rambler.ru/").read()
+def get(url):
+    if sys.version_info.major==2:
+        urllib.urlopen(url).read()
+    else:
+        urllib.request.urlopen().read()
+
+get("http://google.com/")
+

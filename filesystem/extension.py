@@ -10,3 +10,4 @@ print "ext=", ext
 
 
 print os.path.splitext('.DS_Store')
+print os.path.splitext('/path/to/basename')

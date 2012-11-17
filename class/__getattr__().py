@@ -3,6 +3,7 @@ class classname(object):
 
     def __getattribute__(self, key):
     	print "__getattribute__",key
+        #print hasattr(self,key) # recursive
     	return object.__getattribute__(self, key)
 
     def __getattr__(self, key):

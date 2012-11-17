@@ -2,6 +2,7 @@ from appscript import *
 
 for calendar in app('iCal.app').calendars():
     for event in calendar.events():
+#for calendar in sum(app('iCal.app').calendars.events()[]):
         print ""
         print "uid=", event.uid()
         print "allday_event", event.allday_event()

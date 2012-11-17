@@ -4,9 +4,9 @@ import urllib
 
 
 tree = etree.parse("../sun.xml") # parse file
+print tree.__class__
+# <type 'lxml.etree._ElementTree'>
+print tree.getroot().__class__
+# <type 'lxml.etree._Element'>
 
-# tree = etree.parse(urllib.urlopen("http://www.google.com/")) # parse string
-
-# print(tree.docinfo.doctype)
-
-print tree.getroot()
+print tree.getroot().tag

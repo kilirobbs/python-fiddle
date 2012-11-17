@@ -10,6 +10,6 @@ g = Github(user, password)
 # create_gist(public, files, description)
 files = dict(filename1=InputFileContent("filename1 content"))
 for i,e in enumerate(g.get_user(user).get_events()):
-    print e.payload
+    print e,e.payload
     if i>=10:
         sys.exit(1)
