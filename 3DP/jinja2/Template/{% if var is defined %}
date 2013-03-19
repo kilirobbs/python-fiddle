@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+source="""
+{% if var is defined %}defined{% else %}undefined{% endif %}
+{% if var is none %}none{% else %}not none{% endif %}
+{% if var2 is defined %}defined{% else %}undefined{% endif %}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render(var=None)

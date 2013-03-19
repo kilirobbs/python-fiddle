@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+from pep8 import StyleGuide
+
+
+pep8style = StyleGuide(quiet=True)
+r=pep8style.check_files([__file__])
+print r.get_statistics("E")
+"""
+Get statistics for message codes that start with the prefix.
+prefix="" matches all errors and warnings prefix="E" matches all errors prefix="W" matches all warnings prefix="E4" matches all errors that have to do with imports
+"""
+

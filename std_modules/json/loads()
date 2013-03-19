@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+from json import loads
+l = loads('["foo", {"bar":["baz", null, 1.0, 2]}]')
+print l.__class__
+print l
+print "\nitems:"
+for i in l:
+    print i.__class__, i
+
+
+#f="/Users/nordmenss/Library/Application Support/Sublime Text 2/Packages/Sublime-Gist Raw URL.py/gist-raw-url.sublime-settings"
+#print loads(open(f).read())
+try:
+    print loads("error")
+except Exception,e:
+    print type(e),str(e)

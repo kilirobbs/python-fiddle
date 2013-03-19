@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from os.path import basename,dirname,expanduser,relpath
+
+print relpath(__file__,dirname(dirname(__file__)))
+
+print relpath(__file__,expanduser("~"))
+
+print basename(__file__)
+print dirname(basename(__file__))

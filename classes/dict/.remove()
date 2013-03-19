@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+d = {1: 2, 3: 4}
+
+d.remove("1")

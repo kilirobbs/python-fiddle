@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from autopep8 import FixPEP8
+
+class options(object):
+    def __init__(self):
+        self.ignore = "E501"
+        self.select = []
+        self.verbose = False
+        self.max_line_length=79
+        self.aggressive=True
+
+contents="""
+import os, sys, subprocess
+import pip"""
+fixed=False
+while not fixed:
+    f = FixPEP8(None, options(),contents=contents)
+    fix=f.fix()
+    fixed=fix==contents
+    contents = fix
+print contents,contents.__class__

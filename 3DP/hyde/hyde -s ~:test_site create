@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+hyde -s test_site create

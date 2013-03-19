@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 x = "Hello World!"
 print x[2:]
 # llo World!

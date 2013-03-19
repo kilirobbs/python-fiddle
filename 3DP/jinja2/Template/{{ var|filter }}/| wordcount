@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{{ "words count"|wordcount }}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render()

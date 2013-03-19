@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from pep8 import StyleGuide
+
+
+pep8style = StyleGuide(quiet=True)
+r=pep8style.check_files([__file__])
+# Return the count of errors and warnings for this file.
+print r.get_file_results()
+

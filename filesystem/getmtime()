@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+from datetime import datetime
+from os.path import expanduser,getmtime
+
+path="~/git/fiddle/python-fiddle"
+path=__file__
+print datetime.fromtimestamp(getmtime(expanduser(path)))

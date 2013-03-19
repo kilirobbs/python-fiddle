@@ -1,0 +1,14 @@
+<h2>Features</h2>
+<ul>
+<li>convert markdown to html </li>
+<li>use <a href="https://gist.github.com/4252786">github.css</a></li>
+</ul>
+<h2>Installing</h2>
+<pre><code>pip install githubmarkdown
+</code></pre>
+<h2>Usage</h2>
+<pre><code>from githubmarkdown import html, temphtml
+print html("/path/to/README.md") # or html(open("/path/to/README.md"))
+print temphtml("/path/to/README.md") # or  tempfile(open("/path/to/README.md"))
+&gt;&gt;&gt; '/var/folders/9d/l44q9nhx6_b93pny23s9l0ch0000gn/T/tmpSkoJbP'
+</code></pre>

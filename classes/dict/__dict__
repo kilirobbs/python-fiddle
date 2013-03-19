@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+class cls(dict):
+    pass
+
+print cls(key="value").__dict__

@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+# http://stackoverflow.com/questions/710609/checking-python-module-version-at-runtime
+from pkg_resources import get_distribution
+print get_distribution("macos").version

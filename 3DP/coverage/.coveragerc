@@ -1,0 +1,12 @@
+# .coveragerc to control coverage.py
+[run]
+branch = True
+
+exclude_lines =
+    pragma: no cover
+    unittest.main()
+
+
+omit =
+    objc*
+    *Foundation

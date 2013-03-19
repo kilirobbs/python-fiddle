@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from datetime import timedelta
+
+print timedelta(hours=1)
+print timedelta(hours=1).total_seconds()
+print timedelta(hours=25).total_seconds()
+print timedelta(hours=-25).total_seconds()
+
+print timedelta(days=-25).total_seconds()

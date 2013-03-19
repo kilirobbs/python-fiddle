@@ -1,1 +1,0 @@
-print "1".zfill(2)

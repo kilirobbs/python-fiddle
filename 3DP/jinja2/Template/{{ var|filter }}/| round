@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{{ 42.55|round }}
+{{ 42.55|round(1) }}
+{{ 42.55|round(1, 'floor') }}
+{{ 42.55|round|int }}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render()

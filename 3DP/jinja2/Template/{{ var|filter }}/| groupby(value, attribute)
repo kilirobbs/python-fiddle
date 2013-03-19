@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+class cls(object):
+    attr=None
+    def __init__(self,value):
+        self.attr=value
+
+source="""
+{% for group in items|groupby('attr') %}
+    {{ group.grouper }}
+    {% for item in group.list %}
+        {{ item.attr }}
+    {% endfor %}
+{% endfor %}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render(
+    items=[cls("item1"),cls("item2"),cls("item3")]
+)

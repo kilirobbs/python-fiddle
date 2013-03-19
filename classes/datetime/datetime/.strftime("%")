@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+from datetime import datetime
+now = datetime.now()
+
+print now.strftime('%Y-%m-%d')
+print now.strftime('%Y-%m-%d %H:%M')
+#  ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ
+# Example: 2012-10-09T23:39:01Z.
+print now.strftime('%Y-%m-%dT%H:%M:%SZ')
+print now.strftime("%s")

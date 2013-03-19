@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+from os.path import expanduser
+from git.config import GitConfigParser
+
+# stolen from gitpython/repo/base.py
+f=expanduser(".test")
+config = GitConfigParser(f, read_only=False)
+if not config.has_section("section"):
+    config.add_section("section")
+config.set("section", "key", "value")

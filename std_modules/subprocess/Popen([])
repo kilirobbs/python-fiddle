@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from subprocess import PIPE, Popen, STDOUT
+
+# http://docs.python.org/2/library/subprocess.html#popen-objects
+process = Popen(["ls","-l"], stdout=PIPE, stdin=PIPE, stderr=STDOUT, shell=True)
+# communicate() returns a tuple (stdoutdata, stderrdata).
+stdout,stderr=process.communicate()  # communicate() returns a tuple (stdoutdata, stderrdata).
+print "returncode=", process.returncode  # called after .communicate()
+print r
+
+process = Popen(["python","-c","print 1"], stdout=PIPE, stdin=PIPE, stderr=STDOUT, shell=True)
+# communicate() returns a tuple (stdoutdata, stderrdata).
+r=process.communicate()  # communicate() returns a tuple (stdoutdata, stderrdata).
+print "returncode=", process.returncode  # called after .communicate()
+print r

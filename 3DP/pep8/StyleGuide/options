@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+from pep8 import StyleGuide
+
+
+pep8style = StyleGuide([['statistics',True]])
+options=pep8style.options
+print options
+print options.verbose
+print options.exclude
+print options.diff
+print options.max_line_length
+print options.select
+print options.statistics
+print options.reporter
+print options.filename
+print options.ignore_code
+print options.config
+print options.show_source
+print options.repeat
+print options.format
+print options.show_pep8
+print options.report
+print options.benchmark_keys
+print options.physical_checks
+print options.quiet
+print options.ignore
+print options.doctest

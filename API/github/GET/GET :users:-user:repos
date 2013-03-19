@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+from requests import get
+from gitconfig import gitconfig
+
+url="https://api.github.com/users/%s/repos" % gitconfig.user.name
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+
+for l in r.json:
+    print l
+    print len(l.keys()),sorted(l.keys())
+    print "\n\t#".join(sorted(l.keys()))
+    from sys import exit
+    exit(0)
+
+print "\n\n\n"
+r = get(url+"?page=2",auth=(gitconfig.user.name,gitconfig.github.password))
+
+for l in r.json:
+    print l
+    print len(l.keys()),l.keys()
+

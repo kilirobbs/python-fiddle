@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+from pypixmlrpc import pypi 
+print pypi.user_packages()
+
+for p in pypi.user_packages("username"):
+    print p.name,p.role,p.version
+    print p.versions
+    print p.data # current release data dict
+    for k in p.data.keys(): # aviable keys
+        print getattr(p.data,k) # p.data.author, p.data.description, etc
+    p.data["0.0.1"] # specific release data

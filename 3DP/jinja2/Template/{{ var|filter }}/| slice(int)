@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{% for i in items|slice(3) %}
+{{ i }}
+{% endfor %}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render(
+    items=[0,1,2,3]
+)
+# slice(value, slices, fill_with=None)

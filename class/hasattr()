@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+class cls:
+    id=None
+    _id=None
+
+    def method(self):
+        pass
+
+	@property
+	def some_property(self):
+		return 88
+
+	@property
+	def property_with_error(self):
+		raise TypeError 
+
+print hasattr(cls,"id")
+print hasattr(cls,"_id")
+print hasattr(cls,"id")
+print hasattr(cls,"method")
+print hasattr(cls,"some_property")
+print hasattr(cls,"property_with_error")

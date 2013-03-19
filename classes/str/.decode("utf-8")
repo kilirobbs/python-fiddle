@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+print "str","str".__class__
+print "unicode".decode("utf-8").__class__

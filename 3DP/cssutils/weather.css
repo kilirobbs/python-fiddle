@@ -1,0 +1,517 @@
+/* CSS Document */
+
+.l1 {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #6cbce3;
+	/*padding-left: 100px;*/
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align:center;
+	width: 46%;
+}
+h1.header {
+	color: #6cbce3;
+}
+.l1 b {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+	padding: 10px;
+}
+.l2 {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #6cbce3;
+	/*padding-left: 125px;*/
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align:center;
+}
+.l2 b {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+	padding: 10px;
+}
+#weatherblock {
+	background: transparent url(http://img.tut.by/weather/bg_1/bg_blue_c.jpg) top left repeat-x;
+	height: 220px;
+	width: 100%;
+	display: block;
+	/*margin-left: 12%;*/
+}
+#weatherblock-r {
+	background: transparent url(http://img.tut.by/weather/bg_1/bg_blue_r.jpg) top right no-repeat;
+	height: 200px;
+	width: 100%;
+}
+
+#weatherblock-rn {
+	height: 200px;
+	width: 100%;
+}
+
+#weatherblock-grad {
+	/*background: transparent url(../img/bg_1/thermometer/03.png) top right no-repeat;*/
+	height: 200px;
+	width: 100%;
+}
+#weatherblock-l {
+	height: 200px;
+	width: 100%;
+}
+#weatherblock-l.rain {
+	background: transparent url(http://img.tut.by/weather/bg_1/010.jpg) top left no-repeat;
+}
+#weatherblock-pad {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	padding: 15px 0px 20px 0px;
+}
+#city {
+	text-align:center;
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding-left: 20%; /* was 20% */
+}
+#cels {
+	font: normal 35px Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-weight: bold;
+	color: #fff;
+	padding-right: 18%; /* was 45*/
+}
+
+
+/*vitovt.net style*/
+
+#city1 {
+	text-align:center;
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding-left: 20%; /* was 20% */
+}
+
+#city2 {
+	text-align:center;
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #fff;
+
+}
+
+#cels1 {
+	font: normal 35px Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-weight: bold;
+	color: #fff;
+	padding-right: 18%; /* was 45*/
+}
+
+#cels2 {
+	font: normal 35px Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-weight: bold;
+	color: #fff;
+	text-align:center;
+}
+
+.weather_character
+{
+	 text-align:center; font: 18px Arial, Helvetica, sans-serif; color:#1594da;
+}
+
+.zakat
+{
+	width: 75px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #1594da;
+	text-align: right;
+	vertical-align:top;
+}
+
+.w_d_n_all {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+	text-align: center;
+	margin:0 3px 0 3px;
+}
+.w_d_1, .w_d_2, .w_d_3, .w_d_4, .w_d_5, .w_d_6, .w_d_7, .w_d_8,  .w_d_9, .w_d_10, .w_d_11, .w_d_12, .w_d_13, .w_d_14, .w_d_15, .w_d_16, .w_d_17 {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+	/*width: 80px;*/
+	text-align: center;
+	width: auto;
+	height: 70px;
+	margin:0 3px 0 3px;
+}
+
+.w_n_1, .w_n_2, .w_n_3, .w_n_4, .w_n_5, .w_n_6, .w_n_7, .w_n_8, .w_n_9, .w_n_10, .w_n_11, .w_n_12, .w_n_13, .w_n_14, .w_n_15, .w_n_16, .w_n_17{
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+	/*width: 80px;*/
+	text-align: center;
+	width: auto;
+	height: 70px;
+	margin:0 3px 0 3px;
+}
+
+.w_d_1 {
+	background: transparent url(http://img.tut.by/weather/bg_1/weather_b/001.jpg) top center no-repeat;
+}
+.w_d_2 {
+	background: transparent url(http://img.tut.by/weather/bg_1/weather_b/002.jpg) top center no-repeat;
+}
+
+.w_d_3 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/003.jpg) top center no-repeat;
+ }
+
+.w_d_4 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/004.jpg) top center no-repeat;
+ }
+
+.w_d_5 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/005.jpg) top center no-repeat;
+ }
+
+.w_d_6 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/006.jpg) top center no-repeat;
+ }
+
+.w_d_7 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/007.jpg) top center no-repeat;
+ }
+
+.w_d_8 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/008.jpg) top center no-repeat;
+ }
+
+.w_d_9 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/009.jpg) top center no-repeat;
+ }
+
+.w_d_10 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/010.jpg) top center no-repeat;
+ }
+
+.w_d_11 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/011.jpg) top center no-repeat;
+ }
+
+.w_d_12 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/012.jpg) top center no-repeat;
+ }
+
+  .w_d_13 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/013.jpg) top center no-repeat;
+ }
+
+.w_d_14 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/014.jpg) top center no-repeat;
+ }
+
+.w_d_15 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/015.jpg) top center no-repeat;
+ }
+
+.w_d_16 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/016.jpg) top center no-repeat;
+ }
+
+
+.w_d_17 {
+ background: transparent url(http://img.tut.by/weather/bg_1/weather_b/017.jpg) top center no-repeat;
+ }
+
+.w_n_1 {
+	background: transparent url(http://img.tut.by/weather/bg_1/weather_b/001.jpg) top center no-repeat;
+}
+
+.w_n_2 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/002.jpg) top center no-repeat;
+}
+
+ .w_n_3 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/003.jpg) top center no-repeat;
+}
+.w_n_4 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/004.jpg) top center no-repeat;
+}
+
+.w_n_5 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/005.jpg) top center no-repeat;
+}
+
+.w_n_6 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/006.jpg) top center no-repeat;
+}
+
+.w_n_7 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/007.jpg) top center no-repeat;
+}
+
+.w_n_8 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/008.jpg) top center no-repeat;
+}
+
+.w_n_9 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/009.jpg) top center no-repeat;
+}
+
+.w_n_10 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/010.jpg) top center no-repeat;
+}
+
+
+.w_n_11 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/011.jpg) top center no-repeat;
+}
+
+.w_n_12 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/012.jpg) top center no-repeat;
+}
+
+.w_n_13 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/013.jpg) top center no-repeat;
+}
+
+
+.w_n_14 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/014.jpg) top center no-repeat;
+}
+
+.w_n_15 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/015.jpg) top center no-repeat;
+}
+
+.w_n_16 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/016.jpg) top center no-repeat;
+}
+
+.w_n_17 {
+	background: transparent url(http://img.tut.by/weather/bg_2/weather_b/017.jpg) top center no-repeat;
+}
+
+
+/*end vitovt.net style */
+/* WEATHER */
+.time {
+	font: normal 14px Arial, Helvetica, sans-serif;
+	color: #007fbf;
+	/*width: 80px;*/
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+/* WEATHER TABLE */
+.t_0 {
+	width: 5px;
+}
+.t_t {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	color: #007fbf;
+	background: #e4f0ff;
+	border-bottom: 1px solid #cedce9;
+	padding: 5px 0px;
+	text-align: center;
+}
+.t_t0{
+	background: #fff;
+	border-bottom: 1px solid #cedce9;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #007fbf;
+	text-align: center;
+}
+
+#body .t_t0 a:link,
+#body .t_t0 a:visited {
+	color: #007fbf;
+	text-decoration: none;
+}
+
+a:link.removeCity img,
+a:visited.removeCity img{
+	background: #F2F2F2  url(http://img.tut.by/weather/close.gif) no-repeat 0px 0px;
+	margin-left: 5px;
+	border: 0px;
+}
+
+a:hover.removeCity img,
+a:active.removeCity img{
+	background: #D2ECFF url(http://img.tut.by/weather/close.gif) no-repeat 0px 0px;
+	margin-left: 5px;
+	border: 0px;
+}
+
+
+.t_l, .t_l-l0, .t_l-r1 {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	/*width: 50px;*/
+	background: #ebf5ff;
+	text-align: center;
+	padding: 10px 0px;
+}
+.t_l-w, .t_l-l0-w, .t_l-r1-w {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	/*width: 50px;*/
+	background: #ebf5ff;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+}
+.t_d, .t_d-l0, .t_d-r1 {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	/*width: 50px;*/
+	background: #daebff;
+	text-align: center;
+	padding: 10px 0px;
+}
+.t_l-0, .t_d-0 {
+	text-align:left;
+	font: normal 10px Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 10px 10px;
+}
+.t_l-0 {
+	background: #ebf5ff;
+	border-left: 1px solid #cedce9;
+}
+.t_d-0 {
+	background: #daebff;
+}
+.t_l-0 b, .t_d-0 b, .t_l b, .t_l-l0 b, .t_l-r1 b, .t_d b, .t_d-l0 b, .t_d-r1 b {
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+.t_l, .t_l-w, .t_d, .t_d-0 {
+	border-left: 1px solid #cedce9;
+}
+.t_l-l0, .t_l-l0-w, .t_d-l0 {
+	border: 0px;
+}
+.t_l-r1, .t_l-r1-w, .t_d-r1 {
+	border-right: 1px solid #cedce9;
+	border-left: 1px solid #cedce9;
+}
+.t_b {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+	padding-top: 10px;
+}
+.t_b1 {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+	padding-top: 5px;
+	border-top: 1px solid #cedce9;
+}
+.t_b2 {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #007fbf;
+	text-align: center;
+	padding-top: 4px;
+}
+h1 {
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #008dd4;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.v100 {
+background-color:#089eeb;
+}
+.height_24 {
+	height: 24px;
+}
+.v1 {border-right:3px solid #089eeb}
+
+#bub a {padding-left:10px;background:url(/images/li.gif) no-repeat 0 5px}
+#subscribe {width:100%;background:#F2F2F2 url(http://img.tut.by/i/mbksu.gif) no-repeat 100% 0;margin-right:1px;clear:both}
+#subscribe .module div {padding-left:10px;background:url(http://img.tut.by/i/li0.gif) no-repeat 0 5px; font-size:11px;}
+#prof .module div {padding-left:10px;background:url(http://img.tut.by/i/li0.gif) no-repeat 0 5px; font-size:11px;}
+#forum {background:#F2F2F2 url(http://img.tut.by/i/mbkfo.gif) no-repeat 100% 0;margin-right:1px}
+#forum .module DIV{padding-left:10px;background:url(http://img.tut.by/i/li0.gif) no-repeat 0 5px; font-size:11px;}
+.select-free {position:absolute;	z-index:20;	overflow:hidden; }
+.div_msg {
+	display:none;
+	border:1px solid;
+	background-color:#FFFFFF;
+	position:absolute;
+	margin:10px;
+	padding:10px;
+}
+/*
+	ааЛаОаК аАаВбаОбаАаДаЖаЕббаА
+*/
+
+	.csContainer,
+	.w100p,
+	.csBlock{
+		background-image:none;
+		padding-left:0px;
+	}
+	.csContainer{
+		padding:0px 10px 6px 10px;
+		position:relative;
+	}
+	.csContainer input{
+		width:100%;
+		margin:0 0;
+	}
+	.csIE{
+		position:absolute;
+	}
+	.csBlock{
+		border:1px solid #d8d8d8;
+		border-left:1px solid #b8b8b8;
+		border-top:1px dotted #d8d8d8;
+		padding:1px 1px;
+		background-color:#FFFFFF;
+	}
+	a:link.csItem,
+	a:visited.csItem{
+		display:block;
+		width:auto;
+		background-color:#FFFFFF;
+		padding:0 11px;
+		color:#445465;
+		cursor:pointer;
+	}
+	a:hover.csItem,
+	a:active.csItem,
+	a.afocus{
+		background-color:#e0ecf0 !important;
+	}
+	.csContainer form{
+		display:block;
+		width:100%;
+	}
+	.w100p{
+		width:100%;
+	}
+.alignleft {
+	text-align: left;
+}
+.l1 a {
+	color: #6cbce3;
+}
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+#boxes .window {
+  position:fixed;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:375px;
+  height:103px;
+  background-color: #FFF;
+}

@@ -1,0 +1,5 @@
+print "1".zfill(3)
+# 001
+
+print "1".ljust(3,"0")
+# 100

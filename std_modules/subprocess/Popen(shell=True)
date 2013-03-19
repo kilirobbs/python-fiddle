@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from subprocess import PIPE, Popen
+
+try: 
+    cmd="ps cax | grep say | grep -v grep"
+    process = Popen(cmd,stdout=PIPE)
+except OSError:
+    cmd="ps cax | grep say | grep -v grep"
+    process = Popen(cmd,shell=True,stdout=PIPE)
+    stdout,stderr = process.communicate()
+    print stdout,stderr 
+
+    cmd="""/usr/local/bin/growlnotify -t 'nosetests --with-xunit' -m "finished 00:00:00
+
+~/git/python/"  -a "Terminal"
+"""
+process = Popen(cmd,shell=True,stdout=PIPE)
+stdout,stderr = process.communicate()
+print stdout,stderr 

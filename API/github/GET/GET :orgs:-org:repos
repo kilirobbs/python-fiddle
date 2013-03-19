@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+from requests import get
+from gitconfig import gitconfig
+
+url="https://api.github.com/orgs/%s/repos" % "heroku"
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+print len(r.json)
+for l in r.json:
+    print l
+    print len(l.keys()),l.keys()
+
+print "\n\n\n"
+r = get(url+"?page=2",auth=(gitconfig.user.name,gitconfig.github.password))
+print len(r.json)
+for l in r.json:
+    print l
+    print len(l.keys()),l.keys()

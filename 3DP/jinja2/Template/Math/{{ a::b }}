@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+source="""
+{{ 20 // 7 }}
+"""
+tmpl = Environment().from_string(source)
+print tmpl.render()
+# # Divide two numbers and return the truncated integer result. {{ 20 // 7 }} is 2.

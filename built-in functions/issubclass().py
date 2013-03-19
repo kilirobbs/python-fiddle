@@ -1,7 +1,0 @@
-class subint(int):
-    pass
-
-print issubclass(type(int()), int)
-print issubclass(type(subint()), int)
-print issubclass(type(subint()), (int,float))
-

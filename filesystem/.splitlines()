@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+print open(__file__).read()
+print open(__file__).readlines()
+print open(__file__).read().splitlines()

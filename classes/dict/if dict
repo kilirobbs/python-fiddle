@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+if dict():
+    print "if dict()"
+else:
+    print "not dict()"

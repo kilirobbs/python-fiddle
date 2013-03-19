@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from os import popen
+#from subprocess import call, Popen, PIPE
+
+popen(u"say 'температура -10 градусов' &".encode("utf8"))
+#process.stdin.write("hi")

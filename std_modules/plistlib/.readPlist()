@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+from os.path import expanduser
+from plistlib import readPlist
+plist="~/Library/LaunchAgents/org.lighttpd.plist"
+path=expanduser(plist)
+pl = readPlist(path)
+print pl.__class__,pl
+print pl.keys()
+print pl.Label
+print "Label" in pl
+print "KeepAlive" in pl
+if "Program" in pl:
+    print pl.Program
+if "ProgramArguments" in pl:
+    print pl.ProgramArguments
+    # print pl.programarguments # AttributeError

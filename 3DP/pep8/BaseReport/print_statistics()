@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+from pep8 import StyleGuide
+
+
+pep8style = StyleGuide([['statistics',True]])
+r = pep8style.check_files([__file__])
+print r.print_statistics()

@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+from os.path import getsize
+print getsize(__file__)

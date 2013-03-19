@@ -1,10 +1,10 @@
 from github import Github
+from gitconfig import gitconfig
 
-import macos
-g = Github(macos.user.gitconfig.user.name, macos.user.gitconfig.github.password)
+g = Github(gitconfig.user.name, gitconfig.github.password)
 for gist in g.get_user().get_gists():
     print "\n\n"
-    print gist._requester.__dict__
+    print "is_starred=",gist.is_starred()
     print "description=", gist.description
     print "id=", gist.id
     print "user=", gist.user
@@ -16,7 +16,10 @@ for gist in g.get_user().get_gists():
         print "language=", file.language
         print "raw_url=", file.raw_url
         print "size=", file.size
-        print "content=", file.content
+        try:
+            print "content=", file.content
+        except:
+            pass
     print "public=", gist.public
     print "created_at=", gist.created_at
     print "updated_at=", gist.updated_at

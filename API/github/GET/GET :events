@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from requests import get
+
+r = get('https://api.github.com/events')
+print r.status_code
+
+for e in r.json:
+    print e
+    print "\n\t#".join(sorted(e.keys()))
+    print "payload:",sorted(e["payload"].keys())
+    print "repo:",sorted(e["repo"].keys())
+    from sys import exit
+    exit(0)

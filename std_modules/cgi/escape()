@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+from cgi import escape 
+url='file://localhost/Users/nordmenss/git/FIDDLE/css-fiddle/3DP/bootstrap/class="thumbnails".html'
+
+print escape(url)
+print escape("%20")

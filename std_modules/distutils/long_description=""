@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# http://docs.python.org/distutils/index.html
+
+from distutils.core import setup
+setup(name='long_description',
+    long_description = "desc"
+)

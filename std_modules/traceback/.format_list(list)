@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from sys import exc_info
+from traceback import format_list,extract_tb
+from fixtures import error
+
+try:
+    error()
+except ImportError:
+    print "ImportError"
+except Exception, e:
+    exc_type, exc_obj, exc_tb = exc_info()
+
+print "format_list():"
+print "".join(format_list(extract_tb(exc_tb)))
+
+print "format_list([:-1]):"
+print "".join(format_list(
+    extract_tb(exc_tb)[1:]
+))

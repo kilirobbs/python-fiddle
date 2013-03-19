@@ -1,7 +1,7 @@
 from github import Github
 
-import macos
-g = Github(macos.gitconfig.user.name, macos.gitconfig.github.password)
+#import macos
+g = Github(user, password)
 
 
 print g.get_user().private_gists

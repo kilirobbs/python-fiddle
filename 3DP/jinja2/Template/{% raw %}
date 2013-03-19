@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{% raw %}
+    <ul>
+    {% for item in seq %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endraw %}
+"""
+print Environment().from_string(source).render()

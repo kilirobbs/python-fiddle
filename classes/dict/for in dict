@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+for k in dict(key="value"):
+    print k
+
+for k in None:
+    print k

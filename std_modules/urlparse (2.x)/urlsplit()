@@ -1,0 +1,7 @@
+#!/usr/bin/env pythonurlsplit
+from urlparse import urlsplit
+url="git@github.com:cancerhermit/PyGitConfig.git"
+
+r1 = urlsplit(url)
+print r1
+print r1.geturl()

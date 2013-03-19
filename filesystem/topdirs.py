@@ -7,7 +7,7 @@ print path
 
 def topdirs(dir):
     """list of directory top level files"""
-    return map(lambda x:join(dir,x),next(walk(dir))[1])
+    return map(lambda x:join(dir,x),next(walk(expanduser(dir)))[1])
 
 
 def dirs(path):

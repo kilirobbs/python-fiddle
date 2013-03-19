@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from requests import get
+from gitconfig import gitconfig
+
+url="https://api.github.com/users/%s/events" % gitconfig.user.name
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+print r.status_code
+print len(r.json)
+
+for e in r.json:
+    print e
+    print len(e.keys()),sorted(e.keys())
+    print "\n\t#".join(sorted(e.keys()))
+    from sys import exit
+    exit(0)

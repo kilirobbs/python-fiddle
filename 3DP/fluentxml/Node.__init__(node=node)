@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+from fluentxml import Node, Parser
+content=open('nosetests.xml').read()
+
+class testcase(Node):
+    def __str__(self):
+        return "<testcase>"
+
+    def __repr__(self):
+        return self.__str__()
+
+xml = Parser(content)
+for t in xml.root.testcase:
+    print testcase(node=t)

@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+d=dict(key="value")
+print d
+del d["key"]
+print d
+
+class subcls(dict):
+    def __del__(self):
+        print "__del__",self
+
+d=subcls(key="value")
+print d
+del d["key"]
+print d

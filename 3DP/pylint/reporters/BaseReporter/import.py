@@ -1,0 +1,1 @@
+from pylint.reporters import BaseReporter

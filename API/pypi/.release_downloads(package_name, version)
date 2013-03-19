@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import xmlrpclib
+client = xmlrpclib.ServerProxy('http://pypi.python.org/pypi')
+print client.release_downloads('osascript',"0.0.1")

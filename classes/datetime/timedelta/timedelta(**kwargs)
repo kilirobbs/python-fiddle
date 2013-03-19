@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from datetime import datetime, timedelta
+
+# http://docs.python.org/2/library/datetime.html#timedelta-objects
+# timedelta([days[, seconds[, microseconds[, milliseconds[, minutes[, hours[, weeks]]]]]]])
+now = datetime.now()
+t=timedelta(hours=25)
+print t.seconds
+print now + timedelta(hours=25)
+print now + timedelta(hours=25)
+print timedelta(hours=25)
+print timedelta(hours=-25)
+
+print timedelta(hours=-25)
+print timedelta(weeks=1)
+
+print timedelta(seconds=-20)
+print timedelta(seconds=-30)
+print timedelta(seconds=-40)

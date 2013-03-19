@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-from appscript import *
+from appscript import app,its,k
 
-def maketodo(title="New ToDo", description="New ToDo", priority=False):
-    todo = app('iCal').calendars[u'Напоминания'].todos.end.make(new=k.todo)
-    if priority == True:
-        todo.priority.set(k.high_priority)
-    todo.summary.set(title)
-    todo.description.set(description)
+#app('iCal').calendars[u'Напоминания'].todos.end.make(new=k.todo)
+uid=u"_5ADEBE86-0181-4CFA-A56F-B5A9B39C6D35"
+app('iCal').calendars[its.uid==uid].first.todos.end.make(new=k.todo)
+

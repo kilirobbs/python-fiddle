@@ -1,6 +1,7 @@
+#!/usr/bin/env python
 class sublist(list):
     def __init__(self, data=[]):
-        super(sublist, self).__init__(data)
+        super(type(self), self).__init__(data)
 
     def __getslice__(self, i, j):
         print "__getslice__"
@@ -13,3 +14,9 @@ class sublist(list):
 
 l = sublist([1, 2])
 print l.items()
+
+
+
+class cls(object):
+    def __init__(self,reference):
+        pass 

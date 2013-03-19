@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+exec "print 1"
+exec("print 1") # python 3

@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+from os.path import dirname
+from pep8 import selftest, StyleGuide
+arglist = [
+    ['statistics', True],
+    ['paths', [dirname(__file__)]]
+]
+
+pep8style = StyleGuide(arglist, parse_argv=False, config_file=True)
+fail_s, done_s = selftest(pep8style.options)
+print fail_s, done_s

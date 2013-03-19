@@ -1,10 +1,9 @@
-from appscript import *
+#!/usr/bin/env python
+from appscript import app,reference
 
-application = app('Terminal')
-for window in application.windows():
-    print "frontmost", application.frontmost()
-    print "name=", application.name()
-    print application.version()
+print app('Terminal').properties()
+try:
+    print app('iTunes').properties()
+except reference.CommandError,e:
+    print type(e),str(e)
 
-#print application.properties()
-#print application.startup_settings

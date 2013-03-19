@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 value=-10
 if value:
 	print "True"

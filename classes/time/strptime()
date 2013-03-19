@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+import time
+print time.strptime("30 Nov 00", "%d %b %y")   

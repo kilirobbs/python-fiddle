@@ -1,10 +1,11 @@
-import threading, os
+#!/usr/bin/env python
+from threading import Thread
 
-class subclass(threading.Thread):
+class subclass(Thread):
 	value = None
 	def __init__(self,value):
 		self.value=value
-		threading.Thread.__init__(self)
+		Thread.__init__(self)
 
 	def run(self):
 		print "run"

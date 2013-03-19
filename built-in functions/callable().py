@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def func1():
     pass
 

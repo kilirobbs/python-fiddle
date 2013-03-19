@@ -1,4 +1,4 @@
-import platform
+from platform import system
 
 def ismacos():
-    return platform.system()=="Darwin"
+    return system()=="Darwin"

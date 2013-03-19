@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+# http://docs.python.org/distutils/index.html
+
+from distutils.core import setup
+setup(name='foo',
+    py_modules = ['modname']
+)

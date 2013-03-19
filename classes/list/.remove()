@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+l=["file1","file2","file3"]
+print l
+l.remove("file1")
+print l
+
+print ""
+l=["file.py","file.pyc"]
+print l
+l.remove("file.py")
+print l

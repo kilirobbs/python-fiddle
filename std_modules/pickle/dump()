@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+from datetime import datetime
+from pickle import dump, load
+
+f='pickle.txt'
+now=datetime.now()
+dump(now,open(f, 'wb'))
+
+now=load(open(f))
+print now,now.__class__

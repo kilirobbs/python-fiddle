@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from datetime import date, timedelta
+
+d1=date.today()
+d2=date.today()+timedelta(days=1)
+print d2-d1
+
+print date.today()-date.today()

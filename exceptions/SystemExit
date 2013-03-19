@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from sys import exit
+
+try:
+    exit(0)
+except SystemExit,e:  # sys.exit(...)
+    print type(e),str(e)
+

@@ -1,7 +1,9 @@
-from git import Repo
-
-path = "/Users/nordmenss/git/seowin"
+#!/usr/bin/env python
+from git import exc, Repo
+path = "/Users/nordmenss/git"
 try:
     repo = Repo(path)
-except:
+except exc.InvalidGitRepositoryError:
     print "not git repository"
+except Exception,e:
+    print type(e),str(e)

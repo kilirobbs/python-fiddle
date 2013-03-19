@@ -1,9 +1,11 @@
-import os
+#!/usr/bin/env python
+from os.path import dirname
 
-path = "schema/public/table/tablename/index/indexname"
-dirname = os.path.dirname(path)
+print dirname("justfilename")
+path = "schema/public/table/tablename/index/indexname.md"
+dirname = dirname(path)
 print dirname
-
+print dirname.split("/")
 print dirname.split("/")[-1]
 
 from os.path import abspath, dirname, join

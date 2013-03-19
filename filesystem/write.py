@@ -21,11 +21,5 @@ if not os.path.exists(os.path.dirname(filename)):
     os.makedirs(os.path.dirname(filename))
 
 
-from requests import get
-url="http://export.yandex.ru/weather-ng/forecasts/26686.xml"
-content=get(url).text
-f=os.path.expanduser("~/Downloads/forecast.xml")
-
-print "write utf-8"
-#open(f,"w").write(content)
-open(f,"w").write(str(content).encode("utf-8"))
+open("dict.txt","w").write(unicode(dict()))
+print open("dict.txt").read()

@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+from pylint.lint import PyLinter
+from pylint import checkers
+
+l = PyLinter()
+
+checkers.initialize(l)
+l.quiet = 1
+l.check(__file__)
+print l.stats

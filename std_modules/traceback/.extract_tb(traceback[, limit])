@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+from sys import exc_info
+from traceback import extract_tb
+from fixtures import error
+
+try:
+    #error()
+    import sesese
+except Exception, e:
+    exc_type, exc_obj, exc_tb = exc_info()
+
+print "extract_tb(tb):"
+for e in extract_tb(exc_tb):
+    print e

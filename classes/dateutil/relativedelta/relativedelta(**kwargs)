@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
+
+
+now = datetime.now()
+next=now + timedelta(hours=2,minutes=30)
+
+print relativedelta(next, now)
+print relativedelta(now,next)
+print relativedelta(now,next).__dict__
+
+
+rd=relativedelta(seconds=-30)
+print rd,rd.seconds
+
+rd=relativedelta(hours=-2,seconds=-30)
+print rd,rd.seconds
+print rd,rd.hours

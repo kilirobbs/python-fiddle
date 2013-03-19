@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+from datetime import timedelta
+
+t=timedelta(days=1,hours=1,milliseconds=14,microseconds=88)
+print "total_seconds()",t.total_seconds()
+print "seconds",t.seconds

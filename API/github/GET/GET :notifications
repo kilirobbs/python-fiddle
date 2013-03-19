@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+from datetime import datetime, timedelta
+from requests import get
+from gitconfig import gitconfig
+
+
+url="https://api.github.com/notifications?all=true" 
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+
+for l in r.json:
+    print l
+    print len(l.keys()),sorted(l.keys())
+
+print "\n\n\nsince:"
+since=(datetime.now()-timedelta(days=300)).strftime('%Y-%m-%dT%H:%M:%SZ')
+url="https://api.github.com/notifications?all=true&since=%s" % since
+print url
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+
+for l in r.json:
+    print l
+    print len(l.keys()),sorted(l.keys())

@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+print round(1.5001)
+print 29 / 30
+print 30 / 30
+print 31 / 30
+
+print -29 / 30
+print -30 / 30
+print -31 / 30
+
+print abs(-29) / 30
+print abs(-30) / 30
+print abs(-31) / 30
+#print round(31 %)b
+
+print 39 / 30

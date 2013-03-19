@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# http://docs.python.org/distutils/index.html
+
+from distutils.core import setup
+setup(name='foo',
+    platforms = ['All'],
+    platforms = ["POSIX", "Windows"],
+    platforms = ["Linux", "Windows", "MacOS X"],
+    platforms = ["MacOS X"]
+)

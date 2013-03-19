@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from jinja2 import Environment, FunctionLoader
+
+def load_template(name):
+    # (source,filename, uptodatefunc)
+    print name
+    if name == 'index.html':
+        return ("source","filename", None)
+
+env = Environment(
+    loader=FunctionLoader(load_template) # package_path='templates'
+)
+
+template = env.get_template('index.html')
+print template.render()

@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
+
+
+now = datetime.now()
+next=now + timedelta(hours=2,minutes=30,seconds=30)
+
+print relativedelta(next, now).seconds
+print relativedelta(now,next).seconds
+print relativedelta(now,next).second

@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from datetime import datetime
+from git import Repo
+repo = Repo("/Users/nordmenss/git/test")
+if repo.heads!=[]: # no commits
+    headcommit = repo.head.commit
+    print "headcommit.__class__=", headcommit.__class__, headcommit
+
+    t=headcommit.committed_date
+    s =str(t).ljust(13,"0")
+    print s
+    date = datetime.fromtimestamp(int(s) / 1e3)
+    print date

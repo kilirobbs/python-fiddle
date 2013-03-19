@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from os.path import basename
+from sys import exc_info
+try:
+    some_method()
+except Exception, e:
+    exc_type, exc_obj, exc_tb = exc_info()
+    print "exc_type=",exc_type,exc_type.__class__
+    print "exc_obj=",exc_obj,exc_obj.__class__
+    print "exc_tb=",exc_tb
+    f=exc_tb.tb_frame.f_code.co_filename
+    print exc_type, basename(f), exc_tb.tb_lineno
+    print '%s: %s at "%s", line %s' % (exc_type,exc_obj,f,exc_tb.tb_lineno)

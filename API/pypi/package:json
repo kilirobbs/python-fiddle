@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+from requests import get
+
+# return latest version by default
+url="http://pypi.python.org/pypi/%s/json" % "growlnotify"
+print get(url).json.keys()
+print get(url).json["info"]
+print sorted(get(url).json["info"].keys())
+print "urls:"
+for url in get(url).json["urls"]:
+    print url
+    print sorted(url.keys())

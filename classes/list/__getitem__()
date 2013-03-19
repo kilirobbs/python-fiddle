@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+class cls(list):
+    def __getitem__(self,k):
+        print "__getitem__(%s)" % k
+        return list.__getitem__(self,k)
+
+print cls([1,2,3])[0]

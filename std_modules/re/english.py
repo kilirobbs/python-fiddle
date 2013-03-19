@@ -1,6 +1,10 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import re
+from re import compile,sub
 
 
 def english(text):
-    return bool(re.compile('^[a-zA-Z\-]+\Z').match(text))
+    return bool(compile('^[a-zA-Z\-]+\Z').match(text))
+
+
+print sub("[^\w\d\ \-\_]", "_","word18-space")

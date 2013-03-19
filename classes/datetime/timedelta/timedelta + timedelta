@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from datetime import datetime, timedelta
+
+t=timedelta(hours=1)
+print t+t
+now1=datetime.now()
+now2=datetime.now()
+print (now2-now1).total_seconds()

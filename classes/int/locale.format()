@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+from locale import format, LC_ALL, setlocale
+
+setlocale(LC_ALL, 'ru_RU')
+print format("%d", 1255000, grouping=True)
+
+setlocale(LC_ALL, 'en_US')
+print format("%d", 1255000, grouping=True)

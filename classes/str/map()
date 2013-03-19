@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+
+print map(lambda x:x.lower(),["A","B","C"])

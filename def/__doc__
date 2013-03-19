@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+# http://www.python.org/dev/peps/pep-0257/
+# http://getpython3.com/diveintopython3/your-first-python-program.html
+# http://code.google.com/p/hgtui/wiki/TechnicalSummary
+
+def func(arg,arg1):
+    """Form a complex number.
+
+    Keyword arguments:
+    real -- the real part (default 0.0)
+    imag -- the imaginary part (default 0.0)
+
+    Return value:
+        true - if ok, false - if no changes
+
+    Exeptions:
+    """
+
+def text():
+    """
+    Returns: string
+    """

@@ -17,6 +17,3 @@ if not boolean:
 	print "True"
 else:
 	print "False"
-
-
-

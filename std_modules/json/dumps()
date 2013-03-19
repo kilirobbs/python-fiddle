@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+from datetime import datetime
+from json import dumps
+print dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])
+
+print dumps(['foo',datetime.now()])

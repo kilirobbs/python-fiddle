@@ -1,4 +1,0 @@
-from git import *
-repo = Repo("/Users/nordmenss/git/test")
-
-repo.delete_remote('github')

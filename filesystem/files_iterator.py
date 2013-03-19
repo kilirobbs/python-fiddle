@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def files_iterator(path):
     for parent, dirs, files in os.walk(path,topdown=True):
         try:

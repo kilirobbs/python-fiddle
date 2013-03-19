@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+try:
+    sdsd
+except Exception,e:
+    print type(e).__name__,type(e),str(e)

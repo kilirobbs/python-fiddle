@@ -1,9 +1,0 @@
-class classname(object):
-    value = None
-
-    @property
-    def func(self, value="default"):
-        print "func"
-
-instance = classname()
-instance.func

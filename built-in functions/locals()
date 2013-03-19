@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+
+var="1111"
+print "var" in locals()
+print "var2" in locals()

@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from time import sleep
+from threading import active_count, Thread
+
+value=0
+def count():
+    global value
+    value+=1
+    sleep(1)
+
+t1 = Thread(target=count)
+t2 = Thread(target=count)
+t1.start()
+t2.start()
+while active_count()>1:
+    print "%s, wait..." % active_count()
+    sleep(0.5)
+print "%s, exit" % active_count()
+

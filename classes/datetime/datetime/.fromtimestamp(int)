@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+from datetime import datetime
+s ="1331856000000".ljust(13,"0")
+date = datetime.fromtimestamp(int(s) / 1e3)
+print date

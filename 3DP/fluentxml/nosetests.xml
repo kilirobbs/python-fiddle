@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="4" errors="0" failures="0" skip="2"><testcase classname="tests.test.Test" name="test_pass" time="0.000" /><testcase classname="tests.test.Test" name="test_skip" time="0.000"><skipped type="unittest.case.SkipTest" message=""><![CDATA[SkipTest
+]]></skipped></testcase><testcase classname="tests.test2.Test" name="test_pass2" time="0.000" /><testcase classname="tests.test2.Test" name="test_skip2" time="0.000"><skipped type="unittest.case.SkipTest" message=""><![CDATA[SkipTest
+]]></skipped></testcase></testsuite>

@@ -1,5 +1,5 @@
 from git import *
-repo = Repo("/Users/nordmenss/git/pg_test")
+repo = Repo("/Users/nordmenss/git/python/PyDefaults")
 
 head = repo.head            # the head points to the active branch/ref
 master = head.reference # current branch

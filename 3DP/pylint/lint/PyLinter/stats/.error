@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+from pylint.lint import PyLinter
+from pylint.reporters.text import ParseableTextReporter
+from cStringIO import StringIO
+
+l = PyLinter()
+
+reporter=ParseableTextReporter()
+reporter.set_output(StringIO())
+l.set_reporter(reporter)
+
+l.check("fixtures/errors.py")
+print l.stats["error"]
+
+for k in l.stats["by_module"]:
+    print k,l.stats["by_module"][k]
+
+l.check("fixtures/warnings.py")
+print l.stats["error"]

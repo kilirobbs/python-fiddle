@@ -11,7 +11,6 @@ if Terminal.windows.count() > 0:
     tab.custom_title.set("TDD")
     for window in Terminal.windows():
         for tab in window.tabs():
-            if tab.custom_title() == "TDD":
-                window.close()
+            tab.close()
 else:
     print "0 windows"

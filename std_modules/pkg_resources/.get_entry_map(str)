@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from pkg_resources import  get_entry_map
+
+print get_entry_map("weather") # {}
+emap=get_entry_map("weather.sqlalchemy")
+print emap
+ep=emap.itervalues().next()
+print ep["wind_speed"].load()

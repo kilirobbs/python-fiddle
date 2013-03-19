@@ -1,0 +1,8 @@
+cdatetime
+datetime
+p0
+(S'\x07\xdd\x01\n\x12,3\x06\xa5\xec'
+p1
+tp2
+Rp3
+.

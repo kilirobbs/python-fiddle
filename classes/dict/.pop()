@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+d={"x": 1, "y": 2}
+
+print d.pop("x")
+print d.pop("erer ")
+print d

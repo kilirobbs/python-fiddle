@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+from jinja2 import Environment, FileSystemLoader
+from wildcards import filter
+
+env = Environment(loader=FileSystemLoader('.'))
+
+env.filters['filter'] = filter
+
+
+source="""
+{{ list|filter("*.txt") }}
+"""
+tmpl = env.from_string(source)
+list=["file","file1.txt","file2.txt"]
+print tmpl.render(list=list)

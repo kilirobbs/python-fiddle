@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 
 os.chdir("/Users/nordmenss/git/pg_test")

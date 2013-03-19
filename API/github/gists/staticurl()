@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+from requests import get
+
+def staticurl(url):
+    l=url.split("/")
+    l.pop(len(l)-2)
+    return "/".join(l)
+
+r = get('https://api.github.com/gists/3889945')
+for k,v in r.json["files"].iteritems():
+    print k,v["raw_url"]
+    print staticurl(v["raw_url"])

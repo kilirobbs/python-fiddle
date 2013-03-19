@@ -1,0 +1,3 @@
+#!/bin/sh
+
+nosetests -vv --collect-only

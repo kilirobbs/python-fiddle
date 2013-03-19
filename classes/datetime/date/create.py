@@ -1,4 +1,0 @@
-from datetime import date,datetime
-print date(2012,12,31)
-print date(year=2012,month=12,day=31)
-print datetime.now().date()

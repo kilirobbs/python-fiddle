@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+from os.path import expanduser, isfile
+print isfile("/")
+print isfile(expanduser("~/.bashrc"))

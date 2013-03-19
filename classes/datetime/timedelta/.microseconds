@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from datetime import timedelta
+
+t=timedelta(hours=1,milliseconds=14,microseconds=88)
+print "total_seconds()",t.total_seconds()
+print "microseconds",t.microseconds
+print "milliseconds",t.microseconds % 1000
+

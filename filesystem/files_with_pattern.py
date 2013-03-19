@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import fnmatch
 
 def files_with_pattern(directory, pattern='*'):

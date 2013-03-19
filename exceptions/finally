@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+try:
+    try:
+       sdsdsds
+    except Exception,e:
+        print type(e),str(e)
+finally:
+    print "finally"

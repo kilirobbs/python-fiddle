@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+from requests import get
+from gitconfig import gitconfig
+
+url="https://api.github.com/users/%s/events/public" % gitconfig.user.name
+r = get(url,auth=(gitconfig.user.name,gitconfig.github.password))
+print r.status_code
+print len(r.json)
+for e in r.json:
+    print e
+
+r = get(url,params={"page":2,},auth=(gitconfig.user.name,gitconfig.github.password))
+
+print "\n\n\n"
+print len(r.json)
+for e in r.json:
+    print e
+    print e.keys()

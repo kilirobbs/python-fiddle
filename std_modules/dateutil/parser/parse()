@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from dateutil.parser import parse
+d1 = '2008-09-03T20:56:35.450686Z'
+d2 = parse(d1)
+d3 = d2.astimezone(dateutil.tz.tzutc())
+
+
+print parse("10:10:10") # time
+

@@ -1,4 +1,4 @@
-import autopep8, sys
+from autopep8 import FixPEP8
 
 # select errors / warnings (e.g. ["E4", "W"])
 SELECT = []
@@ -17,7 +17,7 @@ class options(object):
 options = options()
 
 #fix = autopep8.FixPEP8(sys.modules[__name__].__file__, options)
-fix = autopep8.FixPEP8(sys.modules[__name__].__file__,options,contents="import os, sys, subprocess\n")
+fix = FixPEP8(__file__, options, contents="import os, sys, subprocess\n")
 # notice: contents must constain one \n at least
 fixed = fix.fix()
 if isinstance(fixed, str):

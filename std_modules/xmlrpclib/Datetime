@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+from datetime import datetime
+from pypixmlrpc import pypi
+
+for json in pypi.release_urls("osascript","0.0.1"):
+    print json["upload_time"], json["upload_time"].__class__
+    print datetime.strptime(str(json["upload_time"]), "%Y%m%dT%H:%M:%S")

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 def lazy_init(init):
     import inspect
     arg_names = inspect.getargspec(init)[0]

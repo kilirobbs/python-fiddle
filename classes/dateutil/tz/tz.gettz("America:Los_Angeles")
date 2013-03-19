@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+from datetime import datetime
+from dateutil import (parser, tz)
+
+now=datetime.now()
+
+GITHUB_TZ = tz.gettz("America/Los_Angeles")
+utcoffset = GITHUB_TZ.utcoffset(now)
+print utcoffset
+
+print now
+print now.replace(tzinfo=GITHUB_TZ)

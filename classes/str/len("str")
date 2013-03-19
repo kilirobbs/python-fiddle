@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+print len("123")
+print len(None)

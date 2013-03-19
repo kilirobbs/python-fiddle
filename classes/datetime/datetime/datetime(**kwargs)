@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+from datetime import datetime
+import time
+
+now = datetime.now()
+print "now=", now
+
+# datetime.datetime(year, month, day[, hour[, minute[, second[, microsecond[, tzinfo]]]]])
+
+next_min = datetime(now.year, now.month, now.day, now.hour, now.minute + 1)
+print "next_min=", next_min
+
+today = datetime(now.year, now.month, now.day)
+print "today=",today
+
+print now.date()
+
+print datetime(now.year, now.month, now.day)
+
+t="10:10:10"
+print t[0:2]
+print t[3:5]
+print t[6:8]
+datetime(int(t[0:2]),int(t[3:5]),int(t[6:8]))
+
+print datetime(-1,1,1,0,0,0)

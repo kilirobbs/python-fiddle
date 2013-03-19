@@ -1,6 +1,5 @@
 from github import Github
+from gitconfig import gitconfig
 
-import macos
-g = Github(macos.gitconfig.user.name, macos.gitconfig.github.password)
-
+g = Github(gitconfig.user.name, gitconfig.github.password)
 print g.get_user().public_gists

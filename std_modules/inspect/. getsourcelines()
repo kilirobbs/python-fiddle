@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+from inspect import getsourcelines
+from sys import exit
+
+
+#print getsourcelines(exit) # TypeError: <built-in function exit> is not a module, class, method, function, traceback, frame, or code object
+print getsourcelines(getsourcelines)

@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+from os import chmod, stat
+from stat import S_IXUSR
+mode = stat(__file__).st_mode
+chmod(__file__, mode | S_IXUSR)

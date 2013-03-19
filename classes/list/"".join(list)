@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+print "\n".join(["1","2"])
+
+print "+\t"+"\n+\t".join(["1","2"])

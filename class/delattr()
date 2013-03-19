@@ -1,0 +1,7 @@
+class cls(object):
+    id=88
+    value="value"
+
+i=cls()
+print i.value
+delattr(i,"value")

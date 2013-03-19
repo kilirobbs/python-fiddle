@@ -1,5 +1,6 @@
+#!/usr/bin/env python
 from git import *
-repo = Repo("/Users/nordmenss/git/Sublime-autogit")
+repo = Repo("/Users/nordmenss/git/Sublime/sublime-helper")
 
 index = repo.index
 print index

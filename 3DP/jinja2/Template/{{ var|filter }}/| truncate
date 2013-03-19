@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{{ "123456789"|truncate(3,True,".") }}
+"""
+tmpl = Environment().from_string(source)
+items=[0,1,2,3]
+print tmpl.render()

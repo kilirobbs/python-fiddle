@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 
 s = "123456789"
@@ -18,7 +19,11 @@ fileName, ext = os.path.splitext(filename)
 print fileName
 
 print "filename.pyc"[0:-1]
-
+# filename.py
+print "filename.pyc"[:-1]
+# filename.py
 
 
 print "123456789"[1:-1]
+
+print " "[1:] is ""

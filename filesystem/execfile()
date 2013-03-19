@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+print execfile("error.py")
+#print execfile("shell.sh") # python only!

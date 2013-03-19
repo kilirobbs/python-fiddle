@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+from jinja2 import Environment
+
+source="""
+{{ '%0.1f'| format(v|float) }}
+{{ '%0.2f'| format(v|float) }}
+{{ '%0.3f'| format(v|float) }}
+{{ '%0.4f'| format(v|float) }}
+{{ '%d'| format(v|float) }}
+"""
+tmpl = Environment().from_string(source)
+
+print tmpl.render(v=14.88)

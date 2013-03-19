@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+import os
+
+cmd="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+
+d="/Users/nordmenss/git/GISTS/4039460"
+#os.popen(cmd)
+
+print os.popen("ls")

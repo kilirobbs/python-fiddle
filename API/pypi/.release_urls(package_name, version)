@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+import xmlrpclib
+client = xmlrpclib.ServerProxy('http://pypi.python.org/pypi')
+response=client.release_urls("osascript","0.0.1")
+print response
+print sorted(response[0].keys())
+print "\t#"+"\n\t#".join(sorted(response[0].keys()))

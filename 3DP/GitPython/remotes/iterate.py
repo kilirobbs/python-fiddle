@@ -1,5 +1,6 @@
+#!/usr/bin/env python
 from git import *
-repo = Repo("/Users/nordmenss/git/setup-py")
+repo = Repo("/Users/nordmenss/git/FIDDLE/bash-fiddle")
 
 print repo.remotes
 for r in repo.remotes:

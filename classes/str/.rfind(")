@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+print "12345".find("3")
+# 2
+
+print "nosetests.xml".find(".xml")

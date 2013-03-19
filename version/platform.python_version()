@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import platform
+from platform import python_version
+print platform.python_version()

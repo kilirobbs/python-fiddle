@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+import xmlrpclib
+from pypirc import username
+client = xmlrpclib.ServerProxy('http://pypi.python.org/pypi')
+print client.user_packages(username)

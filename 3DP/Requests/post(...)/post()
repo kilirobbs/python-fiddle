@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+from json import dumps
+from requests import post
+from gitconfig import gitconfig
+
+auth=(gitconfig.user.name,gitconfig.github.password)
+url="https://api.github.com/user/repos"
+data=dict(name="test")
+r = post(url,data=dumps(data),auth=auth)
+
+print r # 201
+print r.json

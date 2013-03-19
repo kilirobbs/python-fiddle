@@ -1,11 +1,13 @@
+#!/usr/bin/env python
 from xml.dom import minidom
 import urllib
 
 url = "http://www.earthtools.org/sun/55.120010/33.233448/15/10/3/0"
 xml = urllib.urlopen(url).read()
 
-
+print minidom.Document
 xmldoc = minidom.parseString(xml)
+print "xmldoc",xmldoc
 for child in xmldoc.childNodes:
     print "child.nodeName=", child.nodeName
     for subchild in child.childNodes:
